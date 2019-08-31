@@ -1,5 +1,6 @@
-import 'package:cook_book/categories_screen.dart';
 import 'package:flutter/material.dart';
+
+import './categories_screen.dart';
 
 void main() => runApp(MyApp());
 
