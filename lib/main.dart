@@ -1,3 +1,5 @@
+import 'package:cook_book/screens/meal_detail_screen.dart';
+
 import './screens/category_meals_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
         accentColor: Colors.white,
-        canvasColor: Colors.pink[50],
+        canvasColor: Color.fromRGBO(255,229,229,1),
         fontFamily: 'RaleWay',
         textTheme: ThemeData.light().textTheme.copyWith(
               body1: TextStyle(
@@ -31,7 +33,8 @@ class MyApp extends StatelessWidget {
       ),
       home: CategoriesScreen(),
       routes: {
-        CategoryMealsScreen.routeName : (ctx)=>CategoryMealsScreen()
+        CategoryMealsScreen.routeName : (ctx)=>CategoryMealsScreen(),
+        MealDetailScreen.routeName : (ctx)=>MealDetailScreen(),
       },
     );
   }
