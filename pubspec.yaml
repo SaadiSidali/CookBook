@@ -57,6 +57,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: Muffin
+      fonts:
+        - asset: assets/fonts/Muffin.otf
     - family: RaleWay
       fonts:
         - asset: assets/fonts/Raleway-Regular.ttf
