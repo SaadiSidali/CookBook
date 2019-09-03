@@ -1,6 +1,7 @@
 import 'package:cook_book/screens/categories_screen.dart';
 import 'package:cook_book/screens/favorites_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class TabsScreen extends StatefulWidget {
   @override
@@ -18,7 +19,7 @@ class _TabsScreenState extends State<TabsScreen> {
           bottom: TabBar(
             tabs: <Widget>[
               Tab(
-                icon: Icon(Icons.home),
+                icon: Icon(MdiIcons.foodForkDrink),
                 text: 'Categories',
               ),
               Tab(

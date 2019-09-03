@@ -1,5 +1,6 @@
 import 'package:cook_book/dummy_data.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 const String backGround =
     'https://background-tiles.com/overview/white/patterns/large/1025.png';
@@ -11,7 +12,7 @@ class MealDetailScreen extends StatelessWidget {
       child: Text(
         ' $title ',
         style: Theme.of(context).textTheme.title.copyWith(
-            color: Colors.black87, decoration: TextDecoration.underline),
+            color: Colors.black87, decoration: TextDecoration.none),
       ),
     );
   }
@@ -78,6 +79,7 @@ class MealDetailScreen extends StatelessWidget {
                   children: <Widget>[
                     Icon(Icons.shopping_basket),
                     sectionText(context, 'Ingrediants'),
+                    Icon(MdiIcons.food)
                   ],
                 ),
                 Container(
@@ -120,6 +122,7 @@ class MealDetailScreen extends StatelessWidget {
                   children: <Widget>[
                     Icon(Icons.slow_motion_video),
                     sectionText(context, 'Steps'),
+                    Icon(MdiIcons.stackExchange)
                   ],
                 ),
                 Container(
