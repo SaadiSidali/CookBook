@@ -1,58 +1,50 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import './models/category.dart';
 import './models/meal.dart';
+
 const DUMMY_CATEGORIES = const [
   Category(
-    id: 'c1',
-    title: 'Italian',
-    color: Colors.purple,
-  ),
+      id: 'c1', title: 'Italian', color: Colors.purple, icon: Icons.restaurant),
   Category(
-    id: 'c2',
-    title: 'Quick & Easy',
-    color: Colors.red,
-  ),
+      id: 'c2',
+      title: 'Quick & Easy',
+      color: Colors.red,
+      icon: Icons.slow_motion_video),
   Category(
-    id: 'c3',
-    title: 'Hamburgers',
-    color: Colors.orange,
-  ),
+      id: 'c3',
+      title: 'Hamburgers',
+      color: Colors.orange,
+      icon: MdiIcons.hamburger),
+  Category(id: 'c4', title: 'German', color: Colors.amber, icon: MdiIcons.food),
   Category(
-    id: 'c4',
-    title: 'German',
-    color: Colors.amber,
-  ),
+      id: 'c5',
+      title: 'Light & Lovely',
+      color: Colors.blue,
+      icon: Icons.favorite),
   Category(
-    id: 'c5',
-    title: 'Light & Lovely',
-    color: Colors.blue,
-  ),
+      id: 'c6',
+      title: 'Exotic',
+      color: Colors.green,
+      icon: MdiIcons.swordCross),
   Category(
-    id: 'c6',
-    title: 'Exotic',
-    color: Colors.green,
-  ),
+      id: 'c7',
+      title: 'Breakfast',
+      color: Colors.lightBlue,
+      icon: MdiIcons.foodVariant),
   Category(
-    id: 'c7',
-    title: 'Breakfast',
-    color: Colors.lightBlue,
-  ),
+      id: 'c8', title: 'Asian', color: Colors.lightGreen, icon: MdiIcons.rice),
   Category(
-    id: 'c8',
-    title: 'Asian',
-    color: Colors.lightGreen,
-  ),
+      id: 'c9',
+      title: 'French',
+      color: Colors.pink,
+      icon: MdiIcons.foodCroissant),
   Category(
-    id: 'c9',
-    title: 'French',
-    color: Colors.pink,
-  ),
-  Category(
-    id: 'c10',
-    title: 'Summer',
-    color: Colors.teal,
-  ),
+      id: 'c10',
+      title: 'Summer',
+      color: Colors.teal,
+      icon: Icons.restaurant_menu),
 ];
 
 const DUMMY_MEALS = const [
@@ -404,4 +396,40 @@ const DUMMY_MEALS = const [
     isVegetarian: true,
     isLactoseFree: true,
   ),
+  Meal(
+      imageUrl:
+          'https://hips.hearstapps.com/del.h-cdn.co/assets/17/31/1600x2399/gallery-1501791386-delish-pasta-fagioli-vertical.jpg',
+      title: 'Pasta e Fagioli',
+      affordability: Affordability.Expensive,
+      steps: [
+        'In a large, deep pot over medium heat, heat oil. Add sausage and cook, breaking up with a wooden spoon, until cooked through, about 5 minutes. Stir in onion, carrots, and celery and cook until slightly softened, about 5 minutes.',
+        'Add garlic and cook until fragrant, 1 minute more. Season with salt and pepper, then add in beans (with their liquid), diced tomatoes, chicken broth, and rosemary. Bring to a boil, then stir in ditalini.',
+        'Add garlic and cook until fragrant, 1 minute more. Season with salt and pepper, then add in beans (with their liquid), diced tomatoes, chicken broth, and rosemary. Bring to a boil, then stir in ditalini.',
+        'Serve in bowls garnished with Parmesan and parsley.',
+      ],
+      categories: ['c1'],
+      ingredients: [
+        '2 tbsp. extra-virgin olive oil',
+        '1/2 lb. spicy (or sweet) Italian sausage',
+        '1 medium yellow onion, finely chopped',
+        '2 medium carrots, peeled and finely chopped',
+        '2 stalks celery, finely chopped',
+        '3 cloves garlic, minced',
+        'kosher salt',
+        'Freshly ground black pepper',
+        '2 (15-oz.) cans Great Northern Beans',
+        '1 (15-oz.) can diced tomatoes',
+        '4 c. Swanson Chicken Broth',
+        '2 sprigs rosemary, leaves finely chopped',
+        '1 1/2 c. ditalini pasta (or other small shape)',
+        'Freshly grated Parmesan, for garnish',
+        'Freshly chopped parsley, for garnish'
+      ],
+      complexity: Complexity.Simple,
+      duration: 20,
+      id: 'm11',
+      isLactoseFree: true,
+      isVegetarian: true,
+      isGlutenFree: false,
+      isVegan: true),
 ];

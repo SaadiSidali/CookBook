@@ -101,10 +101,10 @@ class MealDetailScreen extends StatelessWidget {
                                 style:
                                     Theme.of(context).textTheme.title.copyWith(
                                           fontFamily: 'Muffin',
-                                          color: Colors.black.withOpacity(.8),
+                                          
                                           fontSize: 18,
                                         ),
-                              )),
+                              textAlign: TextAlign.center,)),
                           Container(
                             child: Divider(
                               color: Colors.black.withOpacity(.8),

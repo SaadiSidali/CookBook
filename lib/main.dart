@@ -1,3 +1,4 @@
+import 'package:cook_book/screens/filters_screen.dart';
 import 'package:cook_book/screens/meal_detail_screen.dart';
 import 'package:cook_book/screens/tabs_screen.dart';
 
@@ -10,6 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // darkTheme: ThemeData(
+      //     primaryColor: Colors.black,
+      //     canvasColor: Colors.grey[900],
+      //     accentColor: Colors.pink,
+      //     disabledColor: Colors.white70,
+      //     textTheme: TextTheme(title: TextStyle(color: Colors.white))),
       title: 'DeliMeals',
       theme: ThemeData(
         primarySwatch: Colors.red,
@@ -29,11 +36,11 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
       ),
-      
       routes: {
         '/': (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
     );
   }
